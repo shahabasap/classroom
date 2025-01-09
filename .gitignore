@@ -1,0 +1,22 @@
+# Node.js dependencies
+classroom_backend/node_modules/
+classroom_frontend/node_modules/
+
+# Environment files
+classroom_backend/.env
+classroom_frontend/.env
+
+# JWT private and public keys
+classroom_backend/src/application/service/jwtService/private.pem
+classroom_backend/src/application/service/jwtService/public.pem
+
+# Build outputs (if applicable)
+classroom_backend/dist/
+classroom_frontend/build/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

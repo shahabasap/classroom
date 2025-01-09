@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Kumbh+Sans:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+}
+
+body {
+  @apply font-kumbhsans;
+}
+
+.primary-btn {
+  @apply text-white cursor-pointer bg-costume-primary-color hover:bg-opacity-70   rounded-md px-2 py-1
+}
+
+.success-btn {
+  @apply bg-green-700 text-white px-2 py-1 rounded-md hover:bg-green-600
+}
+
+.warning-btn {
+  @apply bg-orange-600 text-white px-2 py-1 rounded-md hover:bg-orange-400
+}
+
+.danger-btn {
+  @apply bg-red-700 text-white px-2 py-1 rounded-md hover:bg-red-600
+}
